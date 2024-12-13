@@ -1,6 +1,4 @@
 import { z } from "zod";
-import loginImg from "../../assets/png/Illustrasi Login.png";
-import logoImg from "../../assets/png/Logo.png";
 import {
   Form,
   FormControl,
@@ -90,7 +88,7 @@ const RegisterPage = () => {
       <div className="flex items-center justify-center">
         <div className="flex flex-col text-center gap-8 w-96 ">
           <div className="flex items-center justify-center gap-2">
-            <img src={logoImg} alt="logo-img" />
+            <img src={"/assets/png/Illustrasi Login.png"} alt="logo-img" />
             <h2 className="text-xl font-semibold">SIMS PPOB</h2>
           </div>
           <h1 className="text-3xl font-medium">

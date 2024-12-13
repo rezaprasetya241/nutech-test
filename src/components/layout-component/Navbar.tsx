@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import logoImg from "../../assets/png/Logo.png";
 const Navbar = () => {
   const location = useLocation();
 
@@ -8,7 +7,7 @@ const Navbar = () => {
     <div className="flex justify-center pt-12 pb-3 border-b">
       <div className="flex items-center justify-between max-w-5xl  w-full">
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={logoImg} alt="logo-brand" />
+          <img src={"/assets/png/Logo.png"} alt="logo-brand" />
           <p>SIMS PPOB</p>
         </Link>
         <div className="flex items-center gap-12">

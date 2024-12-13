@@ -1,5 +1,4 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import profileImg from "../../../assets/png/Profile.png";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/store";
 import React, { useEffect, useState } from "react";
@@ -35,7 +34,7 @@ const formSchema = z.object({
 const DetailsProfilePage = () => {
   const [isEdit, setIsEdit] = useState<boolean>(false);
   // const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [preview, setPreview] = useState<string>(profileImg);
+  const [preview, setPreview] = useState<string>("/assets/png/Profile.png");
   const dataProfile = useSelector((state: RootState) => state.profile.data);
   const dispatch = useDispatch<AppDispatch>();
   const regex = /https:\/\/.*\/.*\/null$/;

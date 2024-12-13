@@ -1,7 +1,6 @@
 import { AppDispatch, RootState } from "@/store";
 import { useDispatch, useSelector } from "react-redux";
 
-import profileImg from "../../assets/png/Profile.png";
 import { useEffect, useState } from "react";
 import { getProfile } from "@/api/query/profile/profile-query";
 import { formatCurrency } from "@/lib/utils";
@@ -29,10 +28,10 @@ const Profile = () => {
             src={
               !regex.test(dataProfile.profile_image)
                 ? dataProfile.profile_image
-                : profileImg
+                : "/assets/png/Profile.png"
             }
             onError={(e) => {
-              e.currentTarget.src = profileImg;
+              e.currentTarget.src = "/assets/png/Profile.png";
             }}
           />
         </Avatar>
