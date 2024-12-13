@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        saldo: "url('./assets/png/bg-saldo.png')",
+        saldo: "url('/assets/png/bg-saldo.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
